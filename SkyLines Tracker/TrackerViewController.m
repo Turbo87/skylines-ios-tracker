@@ -10,6 +10,8 @@
 
 @interface TrackerViewController ()
 
+@property AsyncUdpSocket *socket;
+
 @end
 
 @implementation TrackerViewController
@@ -18,6 +20,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    self.socket = [[AsyncUdpSocket alloc] initWithDelegate:self];
+
+    NSError *error = nil;
+    [self.socket connectToHost:@"localhost" onPort:5597 error:&error];
+
+    NSData *data = [@"somedata" dataUsingEncoding:NSUTF8StringEncoding];
+    [self.socket sendData:data withTimeout:-1 tag:1];
+
+    [self.socket closeAfterSending];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +55,11 @@
 - (void)locationError:(NSError *)error
 {
     self.locationLabel.text = [error description];
+}
+
+- (void)onUdpSocket:(AsyncUdpSocket *)sock didSendDataWithTag:(long)tag
+{
+    NSLog(@"sent message with tag: %ld", tag);
 }
 
 @end

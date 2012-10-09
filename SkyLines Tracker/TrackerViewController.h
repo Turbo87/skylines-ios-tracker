@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "LocationController.h"
+#import "AsyncUdpSocket.h"
 
-@interface TrackerViewController : UIViewController <LocationControllerDelegate>
+@interface TrackerViewController : UIViewController <LocationControllerDelegate, AsyncUdpSocketDelegate>
 {
     LocationController *locationController;
 }
@@ -18,6 +19,8 @@
 
 - (void)locationUpdate:(CLLocation *)location;
 - (void)locationError:(NSError *)error;
+
+- (void)onUdpSocket:(AsyncUdpSocket *)sock didSendDataWithTag:(long)tag;
 
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 
