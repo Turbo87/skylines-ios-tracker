@@ -8,9 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol LocationControllerDelegate
+
+@required
+
+- (void)locationUpdate:(CLLocation *)location;
+- (void)locationError:(NSError *)error;
+
+@end
+
 @interface LocationController : NSObject <CLLocationManagerDelegate>
 
 @property (nonatomic, retain) CLLocationManager *locationManager;
+@property (nonatomic, assign) id delegate;
 
 - (void)locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation

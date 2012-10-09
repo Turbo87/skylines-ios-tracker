@@ -9,12 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "LocationController.h"
 
-@interface TrackerViewController : UIViewController
+@interface TrackerViewController : UIViewController <LocationControllerDelegate>
 {
     LocationController *locationController;
 }
 
 - (IBAction)startTracking:(id)sender;
+
+- (void)locationUpdate:(CLLocation *)location;
+- (void)locationError:(NSError *)error;
 
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 
