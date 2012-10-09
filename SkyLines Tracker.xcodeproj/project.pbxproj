@@ -68,7 +68,6 @@
 		07DCAE2A1624568900F11C6B = {
 			isa = PBXGroup;
 			children = (
-				07DCAE611624664100F11C6B /* CoreLocation.framework */,
 				07DCAE3F1624568900F11C6B /* SkyLines Tracker */,
 				07DCAE381624568900F11C6B /* Frameworks */,
 				07DCAE361624568900F11C6B /* Products */,
@@ -86,9 +85,10 @@
 		07DCAE381624568900F11C6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				07DCAE391624568900F11C6B /* UIKit.framework */,
-				07DCAE3B1624568900F11C6B /* Foundation.framework */,
 				07DCAE3D1624568900F11C6B /* CoreGraphics.framework */,
+				07DCAE611624664100F11C6B /* CoreLocation.framework */,
+				07DCAE3B1624568900F11C6B /* Foundation.framework */,
+				07DCAE391624568900F11C6B /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
