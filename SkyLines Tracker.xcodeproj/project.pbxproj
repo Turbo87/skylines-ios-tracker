@@ -13,9 +13,6 @@
 		07DCAE441624568900F11C6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07DCAE421624568900F11C6B /* InfoPlist.strings */; };
 		07DCAE461624568900F11C6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCAE451624568900F11C6B /* main.m */; };
 		07DCAE4A1624568900F11C6B /* TrackerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCAE491624568900F11C6B /* TrackerAppDelegate.m */; };
-		07DCAE4C1624568900F11C6B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DCAE4B1624568900F11C6B /* Default.png */; };
-		07DCAE4E1624568900F11C6B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DCAE4D1624568900F11C6B /* Default@2x.png */; };
-		07DCAE501624568900F11C6B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DCAE4F1624568900F11C6B /* Default-568h@2x.png */; };
 		07DCAE531624568900F11C6B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCAE511624568900F11C6B /* MainStoryboard.storyboard */; };
 		07DCAE561624568900F11C6B /* TrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCAE551624568900F11C6B /* TrackerViewController.m */; };
 /* End PBXBuildFile section */
@@ -31,9 +28,6 @@
 		07DCAE471624568900F11C6B /* SkyLines Tracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyLines Tracker-Prefix.pch"; sourceTree = "<group>"; };
 		07DCAE481624568900F11C6B /* TrackerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackerAppDelegate.h; sourceTree = "<group>"; };
 		07DCAE491624568900F11C6B /* TrackerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackerAppDelegate.m; sourceTree = "<group>"; };
-		07DCAE4B1624568900F11C6B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		07DCAE4D1624568900F11C6B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		07DCAE4F1624568900F11C6B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		07DCAE521624568900F11C6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		07DCAE541624568900F11C6B /* TrackerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackerViewController.h; sourceTree = "<group>"; };
 		07DCAE551624568900F11C6B /* TrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackerViewController.m; sourceTree = "<group>"; };
@@ -100,9 +94,6 @@
 				07DCAE421624568900F11C6B /* InfoPlist.strings */,
 				07DCAE451624568900F11C6B /* main.m */,
 				07DCAE471624568900F11C6B /* SkyLines Tracker-Prefix.pch */,
-				07DCAE4B1624568900F11C6B /* Default.png */,
-				07DCAE4D1624568900F11C6B /* Default@2x.png */,
-				07DCAE4F1624568900F11C6B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,9 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DCAE441624568900F11C6B /* InfoPlist.strings in Resources */,
-				07DCAE4C1624568900F11C6B /* Default.png in Resources */,
-				07DCAE4E1624568900F11C6B /* Default@2x.png in Resources */,
-				07DCAE501624568900F11C6B /* Default-568h@2x.png in Resources */,
 				07DCAE531624568900F11C6B /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +281,7 @@
 				07DCAE5B1624568900F11C6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
