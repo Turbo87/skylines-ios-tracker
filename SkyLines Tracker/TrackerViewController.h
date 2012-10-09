@@ -10,4 +10,6 @@
 
 @interface TrackerViewController : UIViewController
 
+- (IBAction)startTracking:(id)sender;
+
 @end

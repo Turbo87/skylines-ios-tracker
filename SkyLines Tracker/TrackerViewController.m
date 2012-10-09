@@ -26,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)startTracking:(id)sender
+{
+    NSLog(@"Tracking Button pressed");
+}
+
 @end
