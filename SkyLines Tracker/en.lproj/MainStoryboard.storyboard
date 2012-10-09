@@ -28,13 +28,27 @@
                                     <action selector="startTracking:" destination="2" eventType="touchUpInside" id="0er-yv-8dw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaK-yh-G7r">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="loJ-ST-Khi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZaK-yh-G7r" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="4U5-h5-aaq"/>
+                            <constraint firstItem="ZaK-yh-G7r" firstAttribute="centerX" secondItem="PzG-0L-fOo" secondAttribute="centerX" type="default" id="7Kd-ZR-cmY"/>
+                            <constraint firstAttribute="trailing" secondItem="ZaK-yh-G7r" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="FnB-aG-EBn"/>
                             <constraint firstAttribute="bottom" secondItem="PzG-0L-fOo" secondAttribute="bottom" constant="115" id="LcP-7q-L9O"/>
-                            <constraint firstItem="PzG-0L-fOo" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="k8Z-Fo-NJh"/>
+                            <constraint firstItem="ZaK-yh-G7r" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="htK-FH-IWe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="ZaK-yh-G7r" id="hxU-Mr-ocV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>

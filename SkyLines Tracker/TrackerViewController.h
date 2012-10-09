@@ -12,4 +12,6 @@
 
 - (IBAction)startTracking:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+
 @end
