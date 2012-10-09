@@ -29,6 +29,9 @@
 - (IBAction)startTracking:(id)sender
 {
     NSLog(@"Tracking Button pressed");
+    
+    locationController = [[LocationController alloc] init];
+    [locationController.locationManager startUpdatingLocation];
 }
 
 @end

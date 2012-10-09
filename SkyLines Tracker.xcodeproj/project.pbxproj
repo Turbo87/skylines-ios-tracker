@@ -16,6 +16,7 @@
 		07DCAE531624568900F11C6B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCAE511624568900F11C6B /* MainStoryboard.storyboard */; };
 		07DCAE561624568900F11C6B /* TrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCAE551624568900F11C6B /* TrackerViewController.m */; };
 		07DCAE621624664100F11C6B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DCAE611624664100F11C6B /* CoreLocation.framework */; };
+		07DCAE651624678400F11C6B /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCAE641624678400F11C6B /* LocationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		07DCAE541624568900F11C6B /* TrackerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackerViewController.h; sourceTree = "<group>"; };
 		07DCAE551624568900F11C6B /* TrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackerViewController.m; sourceTree = "<group>"; };
 		07DCAE611624664100F11C6B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		07DCAE631624678400F11C6B /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		07DCAE641624678400F11C6B /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +84,14 @@
 		07DCAE3F1624568900F11C6B /* SkyLines Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				07DCAE631624678400F11C6B /* LocationController.h */,
+				07DCAE641624678400F11C6B /* LocationController.m */,
+				07DCAE511624568900F11C6B /* MainStoryboard.storyboard */,
+				07DCAE401624568900F11C6B /* Supporting Files */,
 				07DCAE481624568900F11C6B /* TrackerAppDelegate.h */,
 				07DCAE491624568900F11C6B /* TrackerAppDelegate.m */,
-				07DCAE511624568900F11C6B /* MainStoryboard.storyboard */,
 				07DCAE541624568900F11C6B /* TrackerViewController.h */,
 				07DCAE551624568900F11C6B /* TrackerViewController.m */,
-				07DCAE401624568900F11C6B /* Supporting Files */,
 			);
 			path = "SkyLines Tracker";
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				07DCAE461624568900F11C6B /* main.m in Sources */,
 				07DCAE4A1624568900F11C6B /* TrackerAppDelegate.m in Sources */,
 				07DCAE561624568900F11C6B /* TrackerViewController.m in Sources */,
+				07DCAE651624678400F11C6B /* LocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

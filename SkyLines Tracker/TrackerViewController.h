@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LocationController.h"
 
 @interface TrackerViewController : UIViewController
+{
+    LocationController *locationController;
+}
 
 - (IBAction)startTracking:(id)sender;
 
