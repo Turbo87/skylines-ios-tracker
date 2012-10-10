@@ -7,10 +7,13 @@
 //
 
 #import "TrackingController.h"
+#import "AsyncUdpSocket.h"
 
-@interface TrackingController ()
+@interface TrackingController () <AsyncUdpSocketDelegate>
 
 @property AsyncUdpSocket *socket;
+
+- (void)onUdpSocket:(AsyncUdpSocket *)sock didSendDataWithTag:(long)tag;
 
 @end
 

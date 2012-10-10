@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AsyncUdpSocket.h"
 
-@interface TrackingController : NSObject <AsyncUdpSocketDelegate>
+@interface TrackingController : NSObject
 
 - (id)init;
 
@@ -17,7 +16,5 @@
 - (void)close;
 
 - (BOOL)sendTestData;
-
-- (void)onUdpSocket:(AsyncUdpSocket *)sock didSendDataWithTag:(long)tag;
 
 @end
