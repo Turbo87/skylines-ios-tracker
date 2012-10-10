@@ -10,15 +10,15 @@
 #import "LocationController.h"
 #import "AsyncUdpSocket.h"
 
-@interface TrackerViewController : UIViewController <LocationControllerDelegate, AsyncUdpSocketDelegate>
+@interface TrackerViewController : UIViewController <LocationControllerProtocol, AsyncUdpSocketDelegate>
 {
     LocationController *locationController;
 }
 
 - (IBAction)startTracking:(id)sender;
 
-- (void)locationUpdate:(CLLocation *)location;
-- (void)locationError:(NSError *)error;
+- (void)onUpdate:(CLLocation *)location;
+- (void)onError:(NSError *)error;
 
 - (void)onUdpSocket:(AsyncUdpSocket *)sock didSendDataWithTag:(long)tag;
 

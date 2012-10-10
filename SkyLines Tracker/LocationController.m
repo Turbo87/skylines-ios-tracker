@@ -23,14 +23,14 @@
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation
 {
-    [self.delegate locationUpdate:newLocation];
+    [self.delegate onUpdate:newLocation];
 }
 
 
 - (void)locationManager:(CLLocationManager *)manager
        didFailWithError:(NSError *)error
 {
-    [self.delegate locationError:error];
+    [self.delegate onError:error];
 }
 
 @end

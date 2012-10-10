@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol LocationControllerDelegate
+@protocol LocationControllerProtocol
 
 @required
 
-- (void)locationUpdate:(CLLocation *)location;
-- (void)locationError:(NSError *)error;
+- (void)onUpdate:(CLLocation *)location;
+- (void)onError:(NSError *)error;
 
 @end
 

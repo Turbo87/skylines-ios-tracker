@@ -47,12 +47,12 @@
     [locationController.locationManager startUpdatingLocation];
 }
 
-- (void)locationUpdate:(CLLocation *)location
+- (void)onUpdate:(CLLocation *)location
 {
     self.locationLabel.text = [location description];
 }
 
-- (void)locationError:(NSError *)error
+- (void)onError:(NSError *)error
 {
     self.locationLabel.text = [error description];
 }
