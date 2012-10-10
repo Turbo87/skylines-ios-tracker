@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LocationController.h"
-#import "TrackingController.h"
+#import "Location/LocationController.h"
+#import "Tracking/TrackingController.h"
 
 @interface TrackerViewController : UIViewController <LocationControllerProtocol>
 {
