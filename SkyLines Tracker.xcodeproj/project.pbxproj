@@ -31,6 +31,7 @@
 		07BEE76216257D32003D2A90 /* TrackingController+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TrackingController+Debug.m"; path = "Tracking/TrackingController+Debug.m"; sourceTree = "<group>"; };
 		07BEE765162580B2003D2A90 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationController.h; path = Location/LocationController.h; sourceTree = "<group>"; };
 		07BEE766162580B2003D2A90 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationController.m; path = Location/LocationController.m; sourceTree = "<group>"; };
+		07BEE768162582D9003D2A90 /* Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Protocol.h; path = Tracking/Protocol.h; sourceTree = "<group>"; };
 		07DCAE351624568900F11C6B /* SkyLines Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkyLines Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DCAE391624568900F11C6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07DCAE3B1624568900F11C6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,6 +46,7 @@
 		07DCAE541624568900F11C6B /* TrackerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackerViewController.h; sourceTree = "<group>"; };
 		07DCAE551624568900F11C6B /* TrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackerViewController.m; sourceTree = "<group>"; };
 		07DCAE611624664100F11C6B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		07FB186116258D8A0068D081 /* ByteOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ByteOrder.h; path = Util/ByteOrder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		07BEE75816256F49003D2A90 /* Tracking */ = {
 			isa = PBXGroup;
 			children = (
+				07BEE768162582D9003D2A90 /* Protocol.h */,
 				07BEE75916256F69003D2A90 /* TrackingController.h */,
 				07BEE75A16256F69003D2A90 /* TrackingController.m */,
 				07BEE76116257D32003D2A90 /* TrackingController+Debug.h */,
@@ -125,6 +128,7 @@
 				07BEE76416258073003D2A90 /* Location */,
 				07BEE75816256F49003D2A90 /* Tracking */,
 				0741D944162489430025C5EC /* UDP */,
+				07FB186016258D6C0068D081 /* Util */,
 				07DCAE401624568900F11C6B /* Supporting Files */,
 				07DCAE511624568900F11C6B /* MainStoryboard.storyboard */,
 				07DCAE481624568900F11C6B /* TrackerAppDelegate.h */,
@@ -144,6 +148,14 @@
 				07DCAE471624568900F11C6B /* SkyLines Tracker-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07FB186016258D6C0068D081 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				07FB186116258D8A0068D081 /* ByteOrder.h */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

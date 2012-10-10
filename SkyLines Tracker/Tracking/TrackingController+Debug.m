@@ -7,6 +7,8 @@
 //
 
 #import "TrackingController+Debug.h"
+#import "Protocol.h"
+#import "../Util/ByteOrder.h"
 
 @implementation TrackingController (Debug)
 
@@ -14,7 +16,18 @@
 
 - (BOOL)sendTestData
 {
-    NSData *data = [@"somedata" dataUsingEncoding:NSUTF8StringEncoding];
+    struct PingPacket packet;
+    packet.header.magic = ToBE32(MAGIC);
+    packet.header.crc = 0;
+    packet.header.type = ToBE16(PING);
+    packet.header.key = ToBE64(567);
+    packet.id = ToBE16(5);
+    packet.reserved = 0;
+    packet.reserved2 = 0;
+
+    //packet.header.crc = ToBE16(UpdateCRC16CCITT(&packet, sizeof(packet), 0));
+    
+    NSData *data = [NSData dataWithBytes:&packet length:sizeof(packet)];
     return [self.socket sendData:data withTimeout:-1 tag:1];
 }
 
