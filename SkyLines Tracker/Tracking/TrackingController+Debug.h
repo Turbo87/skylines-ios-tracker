@@ -11,10 +11,6 @@
 
 @interface TrackingController (Debug) <AsyncUdpSocketDelegate>
 
-@property AsyncUdpSocket *socket;
-
-- (BOOL)sendTestData;
-
 - (void)onUdpSocket:(AsyncUdpSocket *)sock didSendDataWithTag:(long)tag;
 
 @end

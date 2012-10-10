@@ -19,7 +19,7 @@
     trackingController = [[TrackingController alloc] init];
     [trackingController setKey:12345];
     [trackingController openWithHost:@"localhost"];
-    [trackingController sendTestData];
+    [trackingController sendPingWithId:5];
 }
 
 - (void)didReceiveMemoryWarning

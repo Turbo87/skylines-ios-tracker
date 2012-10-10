@@ -15,6 +15,8 @@
 - (BOOL)openWithHost: (NSString *)host;
 - (void)close;
 
+- (BOOL)sendPingWithId: (uint16_t)id;
+
 @property uint16_t key;
 
 @end
