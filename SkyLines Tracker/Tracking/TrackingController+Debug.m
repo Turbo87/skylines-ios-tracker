@@ -17,11 +17,14 @@
 
 - (BOOL)sendTestData
 {
+    if (self.key == 0)
+        return NO;
+
     struct PingPacket packet;
     packet.header.magic = ToBE32(MAGIC);
     packet.header.crc = 0;
     packet.header.type = ToBE16(PING);
-    packet.header.key = ToBE64(567);
+    packet.header.key = ToBE64(self.key);
     packet.id = ToBE16(5);
     packet.reserved = 0;
     packet.reserved2 = 0;

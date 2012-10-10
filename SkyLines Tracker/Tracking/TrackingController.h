@@ -15,4 +15,6 @@
 - (BOOL)openWithHost: (NSString *)host;
 - (void)close;
 
+@property uint16_t key;
+
 @end

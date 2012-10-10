@@ -20,8 +20,10 @@
 - (id)init
 {
     self = [super init];
-    if (self != nil)
+    if (self != nil) {
         self.socket = [[AsyncUdpSocket alloc] initWithDelegate:self];
+        self.key = 0;
+    }
 
     return self;
 }

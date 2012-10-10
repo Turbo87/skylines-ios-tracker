@@ -17,6 +17,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 
     trackingController = [[TrackingController alloc] init];
+    [trackingController setKey:12345];
     [trackingController openWithHost:@"localhost"];
     [trackingController sendTestData];
 }
