@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		07BEE75216256CA1003D2A90 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE75116256CA1003D2A90 /* AsyncUdpSocket.m */; };
 		07BEE75B16256F69003D2A90 /* TrackingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE75A16256F69003D2A90 /* TrackingController.m */; };
-		07BEE76316257D32003D2A90 /* TrackingController+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE76216257D32003D2A90 /* TrackingController+Debug.m */; };
 		07BEE767162580B2003D2A90 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE766162580B2003D2A90 /* LocationController.m */; };
 		07DCAE3A1624568900F11C6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DCAE391624568900F11C6B /* UIKit.framework */; };
 		07DCAE3C1624568900F11C6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DCAE3B1624568900F11C6B /* Foundation.framework */; };
@@ -28,8 +27,6 @@
 		07BEE75116256CA1003D2A90 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = UDP/AsyncUdpSocket.m; sourceTree = "<group>"; };
 		07BEE75916256F69003D2A90 /* TrackingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackingController.h; path = Tracking/TrackingController.h; sourceTree = "<group>"; };
 		07BEE75A16256F69003D2A90 /* TrackingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackingController.m; path = Tracking/TrackingController.m; sourceTree = "<group>"; };
-		07BEE76116257D32003D2A90 /* TrackingController+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TrackingController+Debug.h"; path = "Tracking/TrackingController+Debug.h"; sourceTree = "<group>"; };
-		07BEE76216257D32003D2A90 /* TrackingController+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TrackingController+Debug.m"; path = "Tracking/TrackingController+Debug.m"; sourceTree = "<group>"; };
 		07BEE765162580B2003D2A90 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationController.h; path = Location/LocationController.h; sourceTree = "<group>"; };
 		07BEE766162580B2003D2A90 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationController.m; path = Location/LocationController.m; sourceTree = "<group>"; };
 		07BEE768162582D9003D2A90 /* Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Protocol.h; path = Tracking/Protocol.h; sourceTree = "<group>"; };
@@ -82,8 +79,6 @@
 				07BEE768162582D9003D2A90 /* Protocol.h */,
 				07BEE75916256F69003D2A90 /* TrackingController.h */,
 				07BEE75A16256F69003D2A90 /* TrackingController.m */,
-				07BEE76116257D32003D2A90 /* TrackingController+Debug.h */,
-				07BEE76216257D32003D2A90 /* TrackingController+Debug.m */,
 			);
 			name = Tracking;
 			sourceTree = "<group>";
@@ -232,7 +227,6 @@
 				07DCAE561624568900F11C6B /* TrackerViewController.m in Sources */,
 				07BEE75216256CA1003D2A90 /* AsyncUdpSocket.m in Sources */,
 				07BEE75B16256F69003D2A90 /* TrackingController.m in Sources */,
-				07BEE76316257D32003D2A90 /* TrackingController+Debug.m in Sources */,
 				07BEE767162580B2003D2A90 /* LocationController.m in Sources */,
 				07FB18641625A0C30068D081 /* crc.c in Sources */,
 			);
