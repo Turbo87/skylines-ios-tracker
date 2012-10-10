@@ -39,6 +39,7 @@
 - (void)onUpdate:(CLLocation *)location
 {
     self.locationLabel.text = [location description];
+    [trackingController sendFix:location];
 }
 
 - (void)onError:(NSError *)error
