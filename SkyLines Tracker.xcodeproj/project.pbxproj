@@ -20,6 +20,7 @@
 		07DCAE531624568900F11C6B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCAE511624568900F11C6B /* MainStoryboard.storyboard */; };
 		07DCAE561624568900F11C6B /* TrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCAE551624568900F11C6B /* TrackerViewController.m */; };
 		07DCAE621624664100F11C6B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DCAE611624664100F11C6B /* CoreLocation.framework */; };
+		07FB18641625A0C30068D081 /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = 07FB18621625A0C30068D081 /* crc.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		07DCAE551624568900F11C6B /* TrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackerViewController.m; sourceTree = "<group>"; };
 		07DCAE611624664100F11C6B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		07FB186116258D8A0068D081 /* ByteOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ByteOrder.h; path = Util/ByteOrder.h; sourceTree = "<group>"; };
+		07FB18621625A0C30068D081 /* crc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc.c; path = Util/crc.c; sourceTree = "<group>"; };
+		07FB18631625A0C30068D081 /* crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc.h; path = Util/crc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 		07FB186016258D6C0068D081 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				07FB18621625A0C30068D081 /* crc.c */,
+				07FB18631625A0C30068D081 /* crc.h */,
 				07FB186116258D8A0068D081 /* ByteOrder.h */,
 			);
 			name = Util;
@@ -229,6 +234,7 @@
 				07BEE75B16256F69003D2A90 /* TrackingController.m in Sources */,
 				07BEE76316257D32003D2A90 /* TrackingController+Debug.m in Sources */,
 				07BEE767162580B2003D2A90 /* LocationController.m in Sources */,
+				07FB18641625A0C30068D081 /* crc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

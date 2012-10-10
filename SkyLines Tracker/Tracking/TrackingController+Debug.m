@@ -9,6 +9,7 @@
 #import "TrackingController+Debug.h"
 #import "Protocol.h"
 #import "../Util/ByteOrder.h"
+#import "../Util/crc.h"
 
 @implementation TrackingController (Debug)
 
@@ -25,7 +26,11 @@
     packet.reserved = 0;
     packet.reserved2 = 0;
 
-    //packet.header.crc = ToBE16(UpdateCRC16CCITT(&packet, sizeof(packet), 0));
+    crc_t crc = crc_init();
+    crc = crc_update(crc, (const unsigned char *)&packet, sizeof(packet));
+    crc = crc_finalize(crc);
+
+    packet.header.crc = ToBE16(crc);
     
     NSData *data = [NSData dataWithBytes:&packet length:sizeof(packet)];
     return [self.socket sendData:data withTimeout:-1 tag:1];
