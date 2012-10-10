@@ -15,6 +15,4 @@
 - (BOOL)openWithHost: (NSString *)host;
 - (void)close;
 
-- (BOOL)sendTestData;
-
 @end

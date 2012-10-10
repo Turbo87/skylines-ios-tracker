@@ -7,6 +7,7 @@
 //
 
 #import "TrackerViewController.h"
+#import "Tracking/TrackingController+Debug.h"
 
 @implementation TrackerViewController
 

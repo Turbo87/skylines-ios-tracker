@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07BEE75216256CA1003D2A90 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE75116256CA1003D2A90 /* AsyncUdpSocket.m */; };
 		07BEE75B16256F69003D2A90 /* TrackingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE75A16256F69003D2A90 /* TrackingController.m */; };
+		07BEE76316257D32003D2A90 /* TrackingController+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE76216257D32003D2A90 /* TrackingController+Debug.m */; };
 		07DCAE3A1624568900F11C6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DCAE391624568900F11C6B /* UIKit.framework */; };
 		07DCAE3C1624568900F11C6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DCAE3B1624568900F11C6B /* Foundation.framework */; };
 		07DCAE3E1624568900F11C6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DCAE3D1624568900F11C6B /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 		07BEE75116256CA1003D2A90 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = UDP/AsyncUdpSocket.m; sourceTree = "<group>"; };
 		07BEE75916256F69003D2A90 /* TrackingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackingController.h; path = Tracking/TrackingController.h; sourceTree = "<group>"; };
 		07BEE75A16256F69003D2A90 /* TrackingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackingController.m; path = Tracking/TrackingController.m; sourceTree = "<group>"; };
+		07BEE76116257D32003D2A90 /* TrackingController+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TrackingController+Debug.h"; path = "Tracking/TrackingController+Debug.h"; sourceTree = "<group>"; };
+		07BEE76216257D32003D2A90 /* TrackingController+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TrackingController+Debug.m"; path = "Tracking/TrackingController+Debug.m"; sourceTree = "<group>"; };
 		07DCAE351624568900F11C6B /* SkyLines Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkyLines Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DCAE391624568900F11C6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07DCAE3B1624568900F11C6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +76,8 @@
 			children = (
 				07BEE75916256F69003D2A90 /* TrackingController.h */,
 				07BEE75A16256F69003D2A90 /* TrackingController.m */,
+				07BEE76116257D32003D2A90 /* TrackingController+Debug.h */,
+				07BEE76216257D32003D2A90 /* TrackingController+Debug.m */,
 			);
 			name = Tracking;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				07DCAE651624678400F11C6B /* LocationController.m in Sources */,
 				07BEE75216256CA1003D2A90 /* AsyncUdpSocket.m in Sources */,
 				07BEE75B16256F69003D2A90 /* TrackingController.m in Sources */,
+				07BEE76316257D32003D2A90 /* TrackingController+Debug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,11 +9,9 @@
 #import "TrackingController.h"
 #import "AsyncUdpSocket.h"
 
-@interface TrackingController () <AsyncUdpSocketDelegate>
+@interface TrackingController ()
 
 @property AsyncUdpSocket *socket;
-
-- (void)onUdpSocket:(AsyncUdpSocket *)sock didSendDataWithTag:(long)tag;
 
 @end
 
@@ -38,17 +36,6 @@
 - (void)close
 {
     [self.socket close];
-}
-
-- (BOOL)sendTestData
-{
-    NSData *data = [@"somedata" dataUsingEncoding:NSUTF8StringEncoding];
-    return [self.socket sendData:data withTimeout:-1 tag:1];
-}
-
-- (void)onUdpSocket:(AsyncUdpSocket *)sock didSendDataWithTag:(long)tag
-{
-    NSLog(@"sent message with tag: %ld", tag);
 }
 
 @end
