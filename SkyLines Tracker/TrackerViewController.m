@@ -52,7 +52,7 @@
 {
     locationController = [[LocationController alloc] init];
     [locationController addDelegate:self];
-    [locationController.locationManager startUpdatingLocation];
+    [locationController start];
 }
 
 - (void)onUpdate:(CLLocation *)location

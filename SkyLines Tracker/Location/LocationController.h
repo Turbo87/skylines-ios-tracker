@@ -38,18 +38,12 @@
 
 @end
 
-@interface LocationController : NSObject <CLLocationManagerDelegate>
+@interface LocationController : NSObject
 
-@property (nonatomic, retain) CLLocationManager *locationManager;
+- (void)start;
+- (void)stop;
 
 - (void)addDelegate:(id)delegate;
 - (void)removeDelegate:(id)delegate;
-
-- (void)locationManager:(CLLocationManager *)manager
-    didUpdateToLocation:(CLLocation *)newLocation
-           fromLocation:(CLLocation *)oldLocation;
-
-- (void)locationManager:(CLLocationManager *)manager
-       didFailWithError:(NSError *)error;
 
 @end

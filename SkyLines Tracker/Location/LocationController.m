@@ -29,9 +29,17 @@
 
 #import "LocationController.h"
 
-@interface LocationController ()
+@interface LocationController () <CLLocationManagerDelegate>
 
+@property (nonatomic, retain) CLLocationManager *locationManager;
 @property (nonatomic) NSMutableArray *delegates;
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation;
+
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error;
 
 @end
 
@@ -45,6 +53,16 @@
         self.delegates = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+- (void)start
+{
+    [self.locationManager startUpdatingLocation];
+}
+
+- (void)stop
+{
+    [self.locationManager stopUpdatingLocation];
 }
 
 - (void)addDelegate:(id)delegate
