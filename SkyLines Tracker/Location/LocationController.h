@@ -40,7 +40,7 @@
 
 @interface LocationController : NSObject
 
-@property (readonly) BOOL running;
+@property (readonly, getter = isRunning) BOOL running;
 
 - (void)start;
 - (void)stop;

@@ -48,23 +48,27 @@
 - (id) init {
     self = [super init];
     if (self != nil) {
-        self.locationManager = [[CLLocationManager alloc] init];
-        self.locationManager.delegate = self; // send loc updates to myself
         self.delegates = [[NSMutableArray alloc] init];
     }
     return self;
 }
 
+- (BOOL)isRunning
+{
+    return self.locationManager != nil;
+}
+
 - (void)start
 {
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
     [self.locationManager startUpdatingLocation];
-    _running = YES;
 }
 
 - (void)stop
 {
     [self.locationManager stopUpdatingLocation];
-    _running = NO;
+    self.locationManager = nil;
 }
 
 - (void)addDelegate:(id)delegate
