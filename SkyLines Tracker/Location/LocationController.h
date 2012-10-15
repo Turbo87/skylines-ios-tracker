@@ -41,7 +41,9 @@
 @interface LocationController : NSObject <CLLocationManagerDelegate>
 
 @property (nonatomic, retain) CLLocationManager *locationManager;
-@property (nonatomic, assign) id delegate;
+
+- (void)addDelegate:(id)delegate;
+- (void)removeDelegate:(id)delegate;
 
 - (void)locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation

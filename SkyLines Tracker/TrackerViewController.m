@@ -53,7 +53,7 @@
     NSLog(@"Tracking Button pressed");
     
     locationController = [[LocationController alloc] init];
-    locationController.delegate = self;
+    [locationController addDelegate:self];
     [locationController.locationManager startUpdatingLocation];
 }
 
