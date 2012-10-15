@@ -58,11 +58,13 @@
 - (void)start
 {
     [self.locationManager startUpdatingLocation];
+    _running = YES;
 }
 
 - (void)stop
 {
     [self.locationManager stopUpdatingLocation];
+    _running = NO;
 }
 
 - (void)addDelegate:(id)delegate

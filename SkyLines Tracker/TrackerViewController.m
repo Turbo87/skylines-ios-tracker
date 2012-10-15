@@ -40,6 +40,9 @@
     [trackingController setKey:12345];
     [trackingController openWithHost:@"localhost"];
     [trackingController sendPingWithId:5];
+
+    locationController = [[LocationController alloc] init];
+    [locationController addDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,9 +53,10 @@
 
 - (IBAction)startTracking:(id)sender
 {
-    locationController = [[LocationController alloc] init];
-    [locationController addDelegate:self];
-    [locationController start];
+    if (locationController.running)
+        [locationController stop];
+    else
+        [locationController start];
 }
 
 - (void)onUpdate:(CLLocation *)location
