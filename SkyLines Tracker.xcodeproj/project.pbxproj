@@ -17,7 +17,7 @@
 		07DCAE461624568900F11C6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCAE451624568900F11C6B /* main.m */; };
 		07DCAE4A1624568900F11C6B /* TrackerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCAE491624568900F11C6B /* TrackerAppDelegate.m */; };
 		07DCAE531624568900F11C6B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DCAE511624568900F11C6B /* MainStoryboard.storyboard */; };
-		07DCAE561624568900F11C6B /* TrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCAE551624568900F11C6B /* TrackerViewController.m */; };
+		07DCAE561624568900F11C6B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DCAE551624568900F11C6B /* MainViewController.m */; };
 		07DCAE621624664100F11C6B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DCAE611624664100F11C6B /* CoreLocation.framework */; };
 		07FB18641625A0C30068D081 /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = 07FB18621625A0C30068D081 /* crc.c */; };
 /* End PBXBuildFile section */
@@ -41,8 +41,8 @@
 		07DCAE481624568900F11C6B /* TrackerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackerAppDelegate.h; sourceTree = "<group>"; };
 		07DCAE491624568900F11C6B /* TrackerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackerAppDelegate.m; sourceTree = "<group>"; };
 		07DCAE521624568900F11C6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		07DCAE541624568900F11C6B /* TrackerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackerViewController.h; sourceTree = "<group>"; };
-		07DCAE551624568900F11C6B /* TrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackerViewController.m; sourceTree = "<group>"; };
+		07DCAE541624568900F11C6B /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		07DCAE551624568900F11C6B /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		07DCAE611624664100F11C6B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		07FB186116258D8A0068D081 /* ByteOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ByteOrder.h; path = Util/ByteOrder.h; sourceTree = "<group>"; };
 		07FB18621625A0C30068D081 /* crc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc.c; path = Util/crc.c; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 				07DCAE511624568900F11C6B /* MainStoryboard.storyboard */,
 				07DCAE481624568900F11C6B /* TrackerAppDelegate.h */,
 				07DCAE491624568900F11C6B /* TrackerAppDelegate.m */,
-				07DCAE541624568900F11C6B /* TrackerViewController.h */,
-				07DCAE551624568900F11C6B /* TrackerViewController.m */,
+				07DCAE541624568900F11C6B /* MainViewController.h */,
+				07DCAE551624568900F11C6B /* MainViewController.m */,
 			);
 			path = "SkyLines Tracker";
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 			files = (
 				07DCAE461624568900F11C6B /* main.m in Sources */,
 				07DCAE4A1624568900F11C6B /* TrackerAppDelegate.m in Sources */,
-				07DCAE561624568900F11C6B /* TrackerViewController.m in Sources */,
+				07DCAE561624568900F11C6B /* MainViewController.m in Sources */,
 				07BEE75216256CA1003D2A90 /* AsyncUdpSocket.m in Sources */,
 				07BEE75B16256F69003D2A90 /* TrackingController.m in Sources */,
 				07BEE767162580B2003D2A90 /* LocationController.m in Sources */,

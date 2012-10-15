@@ -27,9 +27,9 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "TrackerViewController.h"
+#import "MainViewController.h"
 
-@implementation TrackerViewController
+@implementation MainViewController
 
 - (void)viewDidLoad
 {
