@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07787377162D4C9E007A4D4D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07787376162D4C9E007A4D4D /* Settings.bundle */; };
 		07BEE75216256CA1003D2A90 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE75116256CA1003D2A90 /* AsyncUdpSocket.m */; };
 		07BEE75B16256F69003D2A90 /* TrackingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE75A16256F69003D2A90 /* TrackingController.m */; };
 		07BEE767162580B2003D2A90 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE766162580B2003D2A90 /* LocationController.m */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07787376162D4C9E007A4D4D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		07BEE75016256CA1003D2A90 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = UDP/AsyncUdpSocket.h; sourceTree = "<group>"; };
 		07BEE75116256CA1003D2A90 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = UDP/AsyncUdpSocket.m; sourceTree = "<group>"; };
 		07BEE75916256F69003D2A90 /* TrackingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackingController.h; path = Tracking/TrackingController.h; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				07DCAE421624568900F11C6B /* InfoPlist.strings */,
 				07DCAE451624568900F11C6B /* main.m */,
 				07DCAE471624568900F11C6B /* SkyLines Tracker-Prefix.pch */,
+				07787376162D4C9E007A4D4D /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				07DCAE441624568900F11C6B /* InfoPlist.strings in Resources */,
 				07DCAE531624568900F11C6B /* MainStoryboard.storyboard in Resources */,
+				07787377162D4C9E007A4D4D /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
