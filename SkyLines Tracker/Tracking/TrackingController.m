@@ -32,6 +32,7 @@
 #import "../UDP/AsyncUdpSocket.h"
 #import "../Util/ByteOrder.h"
 #import "../Util/crc.h"
+#import "../Util/TimeUtil.h"
 
 @interface TrackingController ()
 
@@ -85,23 +86,6 @@
 
     NSData *data = [NSData dataWithBytes:&packet length:sizeof(packet)];
     return [self.socket sendData:data withTimeout:-1 tag:1];
-}
-
-static const NSTimeInterval
-getSecondsSinceMidnight(NSDate *now)
-{
-    // Create NSCalendar for NSDate calculations
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    [calendar setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
-
-    // Extract date components from current timestamp
-    NSDateComponents *components = [calendar components:(NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit) fromDate:now];
-
-    // Create new NSDate for UTC midnight
-    NSDate *midnight = [calendar dateFromComponents:components];
-
-    // Return seconds between current timestamp and midnight
-    return [now timeIntervalSinceDate:midnight];
 }
 
 - (BOOL)sendFix:(CLLocation *)location
