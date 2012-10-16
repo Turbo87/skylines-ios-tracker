@@ -98,7 +98,7 @@
     packet.header.crc = 0;
     packet.header.type = ToBE16(FIX);
     packet.header.key = ToBE64(self.key);
-    packet.flags = 0;
+    packet.flags = FLAG_LOCATION | FLAG_ALTITUDE;
 
     // Set location timestamp for packet
     NSTimeInterval seconds_since_midnight = getSecondsSinceMidnight(location.timestamp);
@@ -106,12 +106,10 @@
     packet.reserved = 0;
 
     // Add location data to packet
-    packet.flags |= ToBE32(FLAG_LOCATION);
     packet.location.latitude = ToBE32((int)(location.coordinate.latitude * 1000000));
     packet.location.longitude = ToBE32((int)(location.coordinate.longitude * 1000000));
 
     // Add altitude data to packet
-    packet.flags |= ToBE32(FLAG_ALTITUDE);
     packet.altitude = ToBE16((int)location.altitude);
 
     // Add course data to packet (if available)
