@@ -41,16 +41,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="skylines_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gPz-Dt-GvJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" type="user" id="qXq-oP-yKy"/>
+                                    <constraint firstAttribute="height" constant="230" type="user" id="sG4-FK-4j2"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Lb7-qS-8x3" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="EZG-LY-RjJ"/>
-                            <constraint firstAttribute="trailing" secondItem="ZaK-yh-G7r" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="FnB-aG-EBn"/>
-                            <constraint firstAttribute="bottom" secondItem="PzG-0L-fOo" secondAttribute="bottom" constant="115" id="LcP-7q-L9O"/>
-                            <constraint firstItem="ZaK-yh-G7r" firstAttribute="top" secondItem="3" secondAttribute="top" constant="95" id="Lwy-ml-oMD"/>
-                            <constraint firstItem="ZaK-yh-G7r" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="htK-FH-IWe"/>
+                            <constraint firstItem="gPz-Dt-GvJ" firstAttribute="top" secondItem="Lb7-qS-8x3" secondAttribute="bottom" constant="20" type="user" id="RyI-ab-kfQ"/>
+                            <constraint firstItem="ZaK-yh-G7r" firstAttribute="top" secondItem="gPz-Dt-GvJ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SFk-Zp-GJl"/>
+                            <constraint firstAttribute="trailing" secondItem="ZaK-yh-G7r" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Xkq-Pe-62l"/>
+                            <constraint firstItem="ZaK-yh-G7r" firstAttribute="centerX" secondItem="PzG-0L-fOo" secondAttribute="centerX" type="default" id="jEh-OX-9er"/>
                             <constraint firstItem="Lb7-qS-8x3" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="jXz-cW-DM4"/>
-                            <constraint firstItem="ZaK-yh-G7r" firstAttribute="centerX" secondItem="PzG-0L-fOo" secondAttribute="centerX" type="default" id="m78-zD-cA0"/>
+                            <constraint firstAttribute="bottom" secondItem="PzG-0L-fOo" secondAttribute="bottom" constant="40" type="user" id="kw2-OI-cV9"/>
+                            <constraint firstItem="ZaK-yh-G7r" firstAttribute="centerX" secondItem="gPz-Dt-GvJ" secondAttribute="centerX" type="default" id="mHL-EG-kL5"/>
+                            <constraint firstItem="ZaK-yh-G7r" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nJb-c9-Zga"/>
                             <constraint firstItem="Lb7-qS-8x3" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="pJt-t0-8tV"/>
                         </constraints>
                     </view>
@@ -62,6 +70,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="skylines_logo.png" width="1024" height="1024"/>
+    </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
