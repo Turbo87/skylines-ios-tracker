@@ -32,10 +32,6 @@
 #import "Tracking/TrackingController.h"
 
 @interface MainViewController : UIViewController <LocationControllerProtocol>
-{
-    LocationController *locationController;
-    TrackingController *trackingController;
-}
 
 - (IBAction)startTracking:(id)sender;
 

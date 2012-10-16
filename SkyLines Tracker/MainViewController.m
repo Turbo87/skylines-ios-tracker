@@ -30,6 +30,10 @@
 #import "MainViewController.h"
 
 @interface MainViewController ()
+{
+    LocationController *locationController;
+    TrackingController *trackingController;
+}
 
 - (BOOL)configureKey;
 
