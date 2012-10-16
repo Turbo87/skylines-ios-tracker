@@ -29,6 +29,12 @@
 
 #import "MainViewController.h"
 
+@interface MainViewController ()
+
+- (BOOL)configureKey;
+
+@end
+
 @implementation MainViewController
 
 - (void)viewDidLoad
@@ -37,9 +43,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
 
     trackingController = [[TrackingController alloc] init];
-    [trackingController setKey:12345];
     [trackingController openWithHost:@"localhost"];
     [trackingController sendPingWithId:5];
+    [self configureKey];
 
     locationController = [[LocationController alloc] init];
     [locationController addDelegate:self];
@@ -49,6 +55,23 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)configureKey
+{
+    id defaults = [NSUserDefaults standardUserDefaults];
+    NSString *keyString = [defaults stringForKey:@"tracking_key"];
+    if (keyString == nil)
+        return NO;
+
+    NSScanner *scanner = [NSScanner scannerWithString: keyString];
+
+    unsigned key;
+    if ([scanner scanHexInt: &key] == NO)
+        return NO;
+
+    [trackingController setKey:key];
+    return YES;
 }
 
 - (IBAction)startTracking:(id)sender
