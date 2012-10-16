@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0768C4BF162D7BA600556E4A /* skylines_low_res.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768C4BE162D7BA600556E4A /* skylines_low_res.png */; };
+		0768C4C1162D7BAB00556E4A /* skylines_high_res.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768C4C0162D7BAB00556E4A /* skylines_high_res.png */; };
 		07787377162D4C9E007A4D4D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07787376162D4C9E007A4D4D /* Settings.bundle */; };
 		07BEE75216256CA1003D2A90 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE75116256CA1003D2A90 /* AsyncUdpSocket.m */; };
 		07BEE75B16256F69003D2A90 /* TrackingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BEE75A16256F69003D2A90 /* TrackingController.m */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0768C4BE162D7BA600556E4A /* skylines_low_res.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = skylines_low_res.png; path = ../skylines_low_res.png; sourceTree = "<group>"; };
+		0768C4C0162D7BAB00556E4A /* skylines_high_res.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = skylines_high_res.png; path = ../skylines_high_res.png; sourceTree = "<group>"; };
 		07787376162D4C9E007A4D4D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		07BEE75016256CA1003D2A90 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = UDP/AsyncUdpSocket.h; sourceTree = "<group>"; };
 		07BEE75116256CA1003D2A90 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = UDP/AsyncUdpSocket.m; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 		07DCAE401624568900F11C6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0768C4C0162D7BAB00556E4A /* skylines_high_res.png */,
+				0768C4BE162D7BA600556E4A /* skylines_low_res.png */,
 				07DCAE411624568900F11C6B /* SkyLines Tracker-Info.plist */,
 				07DCAE421624568900F11C6B /* InfoPlist.strings */,
 				07DCAE451624568900F11C6B /* main.m */,
@@ -221,6 +227,8 @@
 				07DCAE441624568900F11C6B /* InfoPlist.strings in Resources */,
 				07DCAE531624568900F11C6B /* MainStoryboard.storyboard in Resources */,
 				07787377162D4C9E007A4D4D /* Settings.bundle in Resources */,
+				0768C4BF162D7BA600556E4A /* skylines_low_res.png in Resources */,
+				0768C4C1162D7BAB00556E4A /* skylines_high_res.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
