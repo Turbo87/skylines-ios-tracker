@@ -41,14 +41,14 @@
 		07BEE768162582D9003D2A90 /* Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Protocol.h; path = Tracking/Protocol.h; sourceTree = "<group>"; };
 		07D5872F162D47C200B7574C /* TimeUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TimeUtil.h; path = Util/TimeUtil.h; sourceTree = "<group>"; };
 		07D58730162D47D400B7574C /* TimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeUtil.m; path = Util/TimeUtil.m; sourceTree = "<group>"; };
-		07DCAE351624568900F11C6B /* SkyLines Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkyLines Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DCAE351624568900F11C6B /* SkyLines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyLines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DCAE391624568900F11C6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07DCAE3B1624568900F11C6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07DCAE3D1624568900F11C6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		07DCAE411624568900F11C6B /* SkyLines Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SkyLines Tracker-Info.plist"; sourceTree = "<group>"; };
+		07DCAE411624568900F11C6B /* SkyLines-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SkyLines-Info.plist"; sourceTree = "<group>"; };
 		07DCAE431624568900F11C6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07DCAE451624568900F11C6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		07DCAE471624568900F11C6B /* SkyLines Tracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyLines Tracker-Prefix.pch"; sourceTree = "<group>"; };
+		07DCAE471624568900F11C6B /* SkyLines-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyLines-Prefix.pch"; sourceTree = "<group>"; };
 		07DCAE481624568900F11C6B /* TrackerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackerAppDelegate.h; sourceTree = "<group>"; };
 		07DCAE491624568900F11C6B /* TrackerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackerAppDelegate.m; sourceTree = "<group>"; };
 		07DCAE521624568900F11C6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		07DCAE2A1624568900F11C6B = {
 			isa = PBXGroup;
 			children = (
-				07DCAE3F1624568900F11C6B /* SkyLines Tracker */,
+				07DCAE3F1624568900F11C6B /* SkyLines */,
 				07DCAE381624568900F11C6B /* Frameworks */,
 				07DCAE361624568900F11C6B /* Products */,
 			);
@@ -115,7 +115,7 @@
 		07DCAE361624568900F11C6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07DCAE351624568900F11C6B /* SkyLines Tracker.app */,
+				07DCAE351624568900F11C6B /* SkyLines.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		07DCAE3F1624568900F11C6B /* SkyLines Tracker */ = {
+		07DCAE3F1624568900F11C6B /* SkyLines */ = {
 			isa = PBXGroup;
 			children = (
 				07BEE76416258073003D2A90 /* Location */,
@@ -145,6 +145,7 @@
 				07DCAE541624568900F11C6B /* MainViewController.h */,
 				07DCAE551624568900F11C6B /* MainViewController.m */,
 			);
+			name = SkyLines;
 			path = "SkyLines Tracker";
 			sourceTree = "<group>";
 		};
@@ -154,10 +155,10 @@
 				0768C4C4162D7FB400556E4A /* skylines_logo.png */,
 				0768C4C0162D7BAB00556E4A /* skylines_high_res.png */,
 				0768C4BE162D7BA600556E4A /* skylines_low_res.png */,
-				07DCAE411624568900F11C6B /* SkyLines Tracker-Info.plist */,
+				07DCAE411624568900F11C6B /* SkyLines-Info.plist */,
 				07DCAE421624568900F11C6B /* InfoPlist.strings */,
 				07DCAE451624568900F11C6B /* main.m */,
-				07DCAE471624568900F11C6B /* SkyLines Tracker-Prefix.pch */,
+				07DCAE471624568900F11C6B /* SkyLines-Prefix.pch */,
 				07787376162D4C9E007A4D4D /* Settings.bundle */,
 			);
 			name = "Supporting Files";
@@ -178,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07DCAE341624568900F11C6B /* SkyLines Tracker */ = {
+		07DCAE341624568900F11C6B /* SkyLines */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07DCAE591624568900F11C6B /* Build configuration list for PBXNativeTarget "SkyLines Tracker" */;
+			buildConfigurationList = 07DCAE591624568900F11C6B /* Build configuration list for PBXNativeTarget "SkyLines" */;
 			buildPhases = (
 				07DCAE311624568900F11C6B /* Sources */,
 				07DCAE321624568900F11C6B /* Frameworks */,
@@ -190,9 +191,9 @@
 			);
 			dependencies = (
 			);
-			name = "SkyLines Tracker";
+			name = SkyLines;
 			productName = "SkyLines Tracker";
-			productReference = 07DCAE351624568900F11C6B /* SkyLines Tracker.app */;
+			productReference = 07DCAE351624568900F11C6B /* SkyLines.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +206,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = XCSoar;
 			};
-			buildConfigurationList = 07DCAE2F1624568900F11C6B /* Build configuration list for PBXProject "SkyLines Tracker" */;
+			buildConfigurationList = 07DCAE2F1624568900F11C6B /* Build configuration list for PBXProject "SkyLines" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,7 +218,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07DCAE341624568900F11C6B /* SkyLines Tracker */,
+				07DCAE341624568900F11C6B /* SkyLines */,
 			);
 		};
 /* End PBXProject section */
@@ -330,9 +331,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SkyLines Tracker/SkyLines Tracker-Prefix.pch";
-				INFOPLIST_FILE = "SkyLines Tracker/SkyLines Tracker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SkyLines Tracker/SkyLines-Prefix.pch";
+				INFOPLIST_FILE = "SkyLines Tracker/SkyLines-Info.plist";
+				PRODUCT_NAME = SkyLines;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -342,9 +343,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SkyLines Tracker/SkyLines Tracker-Prefix.pch";
-				INFOPLIST_FILE = "SkyLines Tracker/SkyLines Tracker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SkyLines Tracker/SkyLines-Prefix.pch";
+				INFOPLIST_FILE = "SkyLines Tracker/SkyLines-Info.plist";
+				PRODUCT_NAME = SkyLines;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -353,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07DCAE2F1624568900F11C6B /* Build configuration list for PBXProject "SkyLines Tracker" */ = {
+		07DCAE2F1624568900F11C6B /* Build configuration list for PBXProject "SkyLines" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07DCAE571624568900F11C6B /* Debug */,
@@ -362,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07DCAE591624568900F11C6B /* Build configuration list for PBXNativeTarget "SkyLines Tracker" */ = {
+		07DCAE591624568900F11C6B /* Build configuration list for PBXNativeTarget "SkyLines" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07DCAE5A1624568900F11C6B /* Debug */,
