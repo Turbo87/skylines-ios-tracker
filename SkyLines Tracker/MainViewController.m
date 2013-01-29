@@ -47,8 +47,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 
     trackingController = [[TrackingController alloc] init];
-    [trackingController openWithHost:@"localhost"];
-    [self configureKey];
+    [trackingController openWithHost:@"78.47.50.46"];
 
     locationController = [[LocationController alloc] init];
     [locationController addDelegate:self];
@@ -83,8 +82,10 @@
 {
     if (locationController.running)
         [locationController stop];
-    else
+    else {
+        [self configureKey];
         [locationController start];
+    }
 
     [self updateControls];
 }
