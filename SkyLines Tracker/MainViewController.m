@@ -83,7 +83,12 @@
     if (locationController.running)
         [locationController stop];
     else {
-        [self configureKey];
+        if (![self configureKey]) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Missing tracking key" message:@"Please open the device settings and enter your SkyLines tracking key." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [alert show];
+            return;
+        }
+
         [locationController start];
     }
 
