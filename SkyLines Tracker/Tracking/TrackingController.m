@@ -36,6 +36,7 @@
 
 @interface TrackingController ()
 
+@property NSString *host;
 @property AsyncUdpSocket *socket;
 
 @end
@@ -53,11 +54,9 @@
     return self;
 }
 
-- (BOOL)openWithHost: (NSString *)host
+- (void)openWithHost: (NSString *)host
 {
-    NSError *error = nil;
-    return [self.socket connectToHost:host onPort:5597 error:&error] &&
-        error == nil;
+    self.host = host;
 }
 
 - (void)close
@@ -85,7 +84,7 @@
     packet.header.crc = ToBE16(crc);
 
     NSData *data = [NSData dataWithBytes:&packet length:sizeof(packet)];
-    return [self.socket sendData:data withTimeout:-1 tag:1];
+    return [self.socket sendData:data toHost:self.host port:5597 withTimeout:-1 tag:1];
 }
 
 - (BOOL)sendFix:(CLLocation *)location
@@ -139,7 +138,7 @@
 
     // Send packet via UDP socket
     NSData *data = [NSData dataWithBytes:&packet length:sizeof(packet)];
-    return [self.socket sendData:data withTimeout:-1 tag:1];
+    return [self.socket sendData:data toHost:self.host port:5597 withTimeout:-1 tag:1];
 }
 
 @end

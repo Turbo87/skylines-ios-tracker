@@ -33,7 +33,7 @@
 
 - (id)init;
 
-- (BOOL)openWithHost: (NSString *)host;
+- (void)openWithHost: (NSString *)host;
 - (void)close;
 
 - (BOOL)sendPingWithId: (uint16_t)id;
