@@ -48,7 +48,6 @@
 
     trackingController = [[TrackingController alloc] init];
     [trackingController openWithHost:@"localhost"];
-    [trackingController sendPingWithId:5];
     [self configureKey];
 
     locationController = [[LocationController alloc] init];
