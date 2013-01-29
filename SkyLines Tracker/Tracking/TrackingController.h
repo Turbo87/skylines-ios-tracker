@@ -40,5 +40,6 @@
 - (BOOL)sendFix: (CLLocation *)location;
 
 @property uint64_t key;
+@property NSTimeInterval interval;
 
 @end

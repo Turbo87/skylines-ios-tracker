@@ -38,6 +38,7 @@
 
 @property NSString *host;
 @property AsyncUdpSocket *socket;
+@property NSDate *lastFix;
 
 @end
 
@@ -48,7 +49,10 @@
     self = [super init];
     if (self != nil) {
         self.socket = [[AsyncUdpSocket alloc] initWithDelegate:self];
+        self.lastFix = nil;
+
         self.key = 0;
+        self.interval = 20;
     }
 
     return self;
@@ -91,6 +95,15 @@
 {
     if (self.key == 0)
         return NO;
+
+    if (self.lastFix != nil) {
+        // Ignore fixes below tracking interval
+        NSTimeInterval dt = [location.timestamp timeIntervalSinceDate:self.lastFix];
+        if (round(dt) < self.interval)
+            return NO;
+    }
+
+    self.lastFix = location.timestamp;
 
     struct FixPacket packet;
     packet.header.magic = ToBE32(MAGIC);

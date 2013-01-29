@@ -63,7 +63,7 @@
 
 - (BOOL)configureKey
 {
-    id defaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *keyString = [defaults stringForKey:@"tracking_key"];
     if (keyString == nil)
         return NO;
@@ -78,6 +78,23 @@
     return YES;
 }
 
+- (BOOL)configureInterval
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    id intervalString = [defaults objectForKey:@"tracking_interval"];
+    if (intervalString == nil)
+        return NO;
+
+    NSScanner *scanner = [NSScanner scannerWithString: intervalString];
+
+    int interval;
+    if ([scanner scanInt: &interval] == NO)
+        return NO;
+
+    trackingController.interval = interval;
+    return YES;
+}
+
 - (IBAction)startTracking:(id)sender
 {
     if (locationController.running)
@@ -89,6 +106,7 @@
             return;
         }
 
+        [self configureInterval];
         [locationController start];
     }
 
