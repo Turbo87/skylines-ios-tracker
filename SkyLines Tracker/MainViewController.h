@@ -39,5 +39,6 @@
 - (void)onError:(NSError *)error;
 
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
 
 @end

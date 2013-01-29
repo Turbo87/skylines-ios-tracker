@@ -52,6 +52,8 @@
 
     locationController = [[LocationController alloc] init];
     [locationController addDelegate:self];
+
+    [self updateControls];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,6 +85,20 @@
         [locationController stop];
     else
         [locationController start];
+
+    [self updateControls];
+}
+
+- (void)updateControls
+{
+    if (locationController.running) {
+        [self.startButton setTitle:@"Stop Tracking" forState:UIControlStateNormal];
+        [self.startButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    } else {
+        self.locationLabel.text = @"Tracking deactivated";
+        [self.startButton setTitle:@"Start Tracking" forState:UIControlStateNormal];
+        [self.startButton setTitleColor:[UIColor colorWithRed:0.196 green:0.275 blue:0.522 alpha:1] forState:UIControlStateNormal];
+    }
 }
 
 - (void)onUpdate:(CLLocation *)location
