@@ -39,6 +39,6 @@
 - (BOOL)sendPingWithId: (uint16_t)id;
 - (BOOL)sendFix: (CLLocation *)location;
 
-@property uint16_t key;
+@property uint64_t key;
 
 @end
