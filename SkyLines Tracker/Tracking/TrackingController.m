@@ -125,14 +125,14 @@
     packet.altitude = ToBE16((int)location.altitude);
 
     // Add course data to packet (if available)
-    if (location.course < 0) {
+    if (location.course >= 0) {
         packet.flags |= ToBE32(FLAG_TRACK);
         packet.track = ToBE16((unsigned)location.course);
     } else
         packet.track = 0;
 
     // Add speed data to packet (if available)
-    if (location.speed < 0) {
+    if (location.speed >= 0) {
         packet.flags |= ToBE32(FLAG_GROUND_SPEED);
         packet.ground_speed = ToBE16((unsigned)(location.speed * 16));
     } else
