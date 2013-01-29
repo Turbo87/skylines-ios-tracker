@@ -97,7 +97,7 @@
     packet.header.crc = 0;
     packet.header.type = ToBE16(FIX);
     packet.header.key = ToBE64(self.key);
-    packet.flags = FLAG_LOCATION | FLAG_ALTITUDE;
+    packet.flags = ToBE32(FLAG_LOCATION) | ToBE32(FLAG_ALTITUDE);
 
     // Set location timestamp for packet
     NSTimeInterval seconds_since_midnight = getSecondsSinceMidnight(location.timestamp);
