@@ -87,13 +87,16 @@
 
 - (void)onUpdate:(CLLocation *)location
 {
-    self.locationLabel.text = [location description];
+    self.locationLabel.text =
+    [NSString stringWithFormat:@"Latitude: %0.3f\nLongitude: %0.3f\nAltitude: %0.0f",
+     location.coordinate.latitude, location.coordinate.longitude, location.altitude];
     [trackingController sendFix:location];
 }
 
 - (void)onError:(NSError *)error
 {
-    self.locationLabel.text = [error description];
+    self.locationLabel.text =
+    [NSString stringWithFormat:@"Unknown Location\n(Error %d)", error.code];
 }
 
 @end
